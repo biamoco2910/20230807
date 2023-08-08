@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Milhas Marítimas -> Quilometros</title>
+</head>
+<body>
+    <script lang="JavaScript">
+        var milhaMaritma, quilometros;
+
+        do
+        {
+            milhaMaritma = parseFloat(window.prompt("Digite o valor em milhas marítmas: ","0"));
+        }
+        while(isNaN(milhaMaritma));
+
+        quilometros = milhaMaritma * 1852;
+
+        document.write("As milhas marítmas informadas equivalem a ", quilometros," km.");
+    </script>
+</body>
+</html>

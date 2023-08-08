@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Media de Notas</title>
+</head>
+<body>
+    <script lang="JavaScript">
+        var media, p2, p1, p22;
+
+        do
+        {do{
+        p1 = parseFloat(window.prompt("Informe a nota da P1: ","0"));
+        }
+        while(isNaN(p1))}
+        while(p1>10)
+        do
+        {
+        do{
+        p2 =  parseFloat(window.prompt("Informe a nota da P2: ","0"));
+        }
+        while(isNaN(p2))}
+        while(p2>10)
+        
+        media = (p1 + p2 + p2)/3
+
+        document.write("Sua media é ", media,".<br>")
+        if(media > 5){
+            document.write("Aprovado!","<br>")
+        }
+        else{
+            document.write("Reprovado.<br>")
+        }
+    </script>
+</body>
+</html>

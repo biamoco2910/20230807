@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Triângulo Retângulo (ou não)</title>
+</head>
+<body>
+    <script lang="JavaScript">
+        var a, b, c, a2, b2, c2;
+
+        a = parseFloat(window.prompt("Informe o valor do lado A do triângulo:","0"));
+        b = parseFloat(window.prompt("Informe o valor do lado B do triângulo:","0"));
+        c = parseFloat(window.prompt("Informe o valor do lado C do triângulo:","0"));
+
+        a2 = a*a;
+        b2 = b*b;
+        c2 = c*c;
+
+        if(a2 + b2 == c2)
+        {
+            document.write("Os valores informados formam um triângulo retângulo!");
+        }
+        else
+        {
+            if(a2 + c2 == b2)
+            {
+                document.write("Os valores informados formam um triângulo retângulo!");
+            }
+            else
+            {
+                if(b2 + c2 == a2)
+                {
+                    document.write("Os valores informados formam um triângulo retângulo!");
+                }
+                else
+                {
+                    document.write("Os valores informados não formam um triângulo retângulo!")
+                }
+            }
+        }
+    </script>
+</body>
+</html>

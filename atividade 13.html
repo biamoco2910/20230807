@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Triângulo (Isóceles, Equilatero, Escaleno)</title>
+</head>
+<body>
+    <script lang="JavaScript">
+        var lA, lB, lC;
+
+        lA = parseFloat(window.prompt("Informe um valor para o lado A do triângulo: ","0"));
+        lB = parseFloat(window.prompt("Informe um valor para o lado B do triângulo: ","0"));
+        lC = parseFloat(window.prompt("Informe um valor para o lado C do triângulo: ","0"));
+
+        if(lA + lB < lC)
+        {
+            document.write("Os lados informados não formam um triângulo.<br>");
+        }
+        else
+        {
+            if(lB + lC < lA)
+            {
+                document.write("Os lados informados não formam um triangulo.<br>");
+            }
+            else
+            {
+                if(lC + lA < lB)
+                {
+                    document.write("Os lados informados não forma um triângulo.<br>");
+                }
+                else
+                {
+                    document. write("Os lados informados formam um triângulo.<br>");
+                    if ((lA != lB)&&(lB != lC)&&(lA != lC))
+                    {
+                        document.write("O triângulo informado é um triângulo escaleno!");
+                        document.write("<img src='img-escaleno.png'>");
+
+                    }
+                    else
+                    {
+                        if((lA == lB)&&(lB == lC))
+                        {
+                            document.write("O triângulo informado é um triângulo equilatero!");
+                            document.write  ("<img src='img-equilatero.png'>");
+                        }
+                        else
+                        {
+                            if(((lA == lB )&&(la =! lC))||((lB == lC)&&(lc != lA))||((lA == lC)&&(la =! lB)))(lA == lB)(lB == lC)
+                            {
+                                document.write("O triângulo informado é um triângulo isóceles!");
+                                document.write ("<img src='img-isoceles.png'>");                            }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>

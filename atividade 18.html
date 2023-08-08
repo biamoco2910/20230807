@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabuada até o 20</title>
+    <style>
+        .l{
+            display: flex;
+        }
+        .tab{
+            padding: 10px;
+            background-color:rgba(250, 250, 250, 0.664);
+            width: 25%;
+            margin: 10px;
+            font-size: 21px;
+        }     
+
+        .t{
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+        }
+
+        .im{
+            color: rgb(6, 6, 230);
+            text-align: center
+        }
+
+        .par{
+            color: crimson;
+            text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <table style="margin: 5px;border-style: dashed;">
+    
+    <script lang="JavaScript">
+
+        var i, j, r;
+
+        document.write("<tr>");
+        document.write("<td>");
+           
+            for(i=1;i<=20;++i)
+            {
+                document.write("<table style='margin: 5px;border-style: dashed; border-color:white;'>");
+                document.write("<tr class=" + (i%2==0?'par':'im') + "><td colspan='5'>Tabuada do " + i +"</td></tr>");
+                for(j=1;j<=10;++j)
+                {
+                    r = i*j;
+                    document.write("<tr class=" + (i%2==0?'par':'im') + "><td align='right'>" + i + "</td><td align='center'> x </td><td align='right'>" + j + "</td><td align='center'> = </td><td align='right'>" + r + "</td></tr>");
+                }
+                document.write("</table>");
+                document.write("</td>");
+                if (i%5==0)
+                {
+                    document.write("</tr>");
+                }
+            document.write("<td>");
+            } 
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Peso Ideal</title>
+</head>
+<body>
+    <script lang="JavaScript">
+     var peso, altura, r,p2;
+
+     do{
+        peso = parseFloat(window.prompt("Informe seu peso:","0"));
+     
+      }while(isNaN(peso));
+
+     do{
+        altura = parseFloat(window.prompt("Informe sua altura:","0"));
+     
+      }while(isNaN(altura));
+
+      p2 = altura*altura;
+      r = peso/p2;
+
+      document.write("A relação é de ",r ,". O que significa que você está ");
+
+      if (r<20) {
+        document.write("abaixo do peso!") ;
+      }
+      else
+      {
+      if (r<25) {
+            document.write("com um peso ideal!");
+        }
+        else {
+            document.write("acima do peso!");
+        }
+      }
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Segundo > Primeiro</title>
+</head>
+<body>
+    <script lang="JavaScript">
+        var a, b;
+
+        do
+        {
+            a = parseFloat(window.prompt("Informe um valor:","0"));
+        }
+        while(isNaN(a));
+        do
+        {
+            b = parseFloat(window.prompt("Informe um valor maior que o anterior:","0"));
+        }
+        while(a>b);
+
+        document.write("A =", a);
+        document.write("B =", b);
+    </script>
+</body>
+</html>
